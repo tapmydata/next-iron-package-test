@@ -1,0 +1,8 @@
+[[plugins]]
+  package = 'netlify-plugin-contextual-env'
+    [plugins.inputs]
+      mode = 'prefix'
+
+[functions]
+	node_bundler = "esbuild"
+	external_node_modules = ["next", "@ampproject/toolbox-optimizer"]
