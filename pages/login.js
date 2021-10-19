@@ -6,7 +6,7 @@ import { Session, withIronSession } from "next-iron-session";
 
 function withSession(handler) {
   return withIronSession(handler, {
-    password: 'yososecret',
+    password: 'complex_password_at_least_32_characters_long',
     cookieName: "test-session",
     cookieOptions: {
       secure: process.env.NODE_ENV === "production",
